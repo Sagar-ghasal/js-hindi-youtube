@@ -107,3 +107,14 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .catch((err)=>{
     console.log(err)
    })
+
+   const abc = ()=>{
+    console.log(this,"arrow")
+   }
+
+   function pqr(){
+    console.log(this, "normal")
+   }
+
+   abc()
+   pqr()
